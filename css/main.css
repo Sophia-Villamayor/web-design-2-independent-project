@@ -1,0 +1,165 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+  box-sizing: border-box;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  font-family: "Noto Sans", sans-serif;
+  line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+.logo {
+  margin: 0;
+  padding: 1rem 1rem 0;
+}
+
+.logo img {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 20%;
+  margin: 0;
+}
+
+header {
+  background-color: #000;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin-top: .25rem;
+  margin-bottom: 0;
+}
+
+li {
+  display: inline-block;
+  padding: 1rem 0;
+}
+
+a {
+  text-decoration: none;
+  color: #ccb6a9;
+}
+
+a:hover {
+  color: #f7d9c8
+}
+
+.intro {
+  background-color: #ccb6a9;
+  margin: 0;
+}
+
+.intro-content {
+  margin-left: 1rem;
+  padding-bottom: 2rem;
+}
+
+.button {
+  background-color: #ccb6a9;
+  border-color: #59656d;
+  border: 3px solid;
+  color: #59656d;
+  padding: .5rem;
+  font-weight: bold;
+}
+
+a.button:hover {
+  background-color: #59656d;
+  border: 3px solid #59656d;
+  color: #fff;
+  border-radius: 4px;
+}
+
+h1 {
+  font-size: 1.953rem;
+  padding-top: 1rem;
+  margin-top: 0;
+  margin-bottom: .5rem;
+  color: #59656d;
+}
+
+.description {
+  width: 98%;
+}
+
+main {
+  margin: 1rem;
+}
+
+.drums {
+  width: 100%;
+}
+
+h2,h3,h4 {
+  margin: .5rem  0;
+  color: #59656d;
+}
+
+.sound, .about {
+  margin: 2rem 0;
+}
+
+.sheet {
+  width: 100%;
+  margin: 0;
+}
+
+.music {
+  background-color: #dedede;
+  padding: 1rem;
+  margin-bottom: 3rem;
+}
+
+.problem {
+  margin-top: .5rem;
+}
+
+.paragraph {
+  margin: .5rem 0;
+}
+
+.explaination {
+  margin: .5rem 0 0 ;
+  width: 95%;
+}
+
+.location {
+  width: 100%;
+}
+
+.icon,
+svg {
+  width: 20%;
+  display: flex;
+  margin: 0;
+  color: #000;
+}
+
+footer {
+  background-color: #000;
+}
+
+@media only screen and (min-width: 25em) {
+
+
+
+}

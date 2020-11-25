@@ -114,8 +114,13 @@ main {
   width: 100%;
 }
 
-h2, h3, h4 {
+h2, h3 {
   margin: .5rem  0;
+  color: #59656d;
+}
+
+h4 {
+  margin: .5rem 1rem;
   color: #59656d;
 }
 
@@ -149,6 +154,10 @@ h2, h3, h4 {
 
 .location {
   width: 100%;
+}
+
+.address {
+  margin: 1rem;
 }
 
 .icon,
@@ -281,9 +290,9 @@ footer {
   }
 
   .address {
-    margin: 1rem 1.5rem;
+    margin: 1rem;
     text-align: center;
-    width: 80%;
+    width: auto;
   }
 
 }
@@ -355,12 +364,16 @@ footer {
   }
 
   .address {
-    width: 100%;
+    width: auto;
   }
 
 }
 
 @media only screen and (min-width: 90em) {
+
+  .logo {
+    margin-right: 55rem;
+  }
 
   nav {
     text-align: right;
@@ -374,16 +387,45 @@ footer {
     padding: 0 3rem;
   }
 
-  .drums, .sheet {
-    width: 80%;
+  .description {
+    width: 30%;
+  }
+
+  .drums {
+    width: 70%;
+    margin-left: 9rem;
+  }
+
+  .sheet {
+    width: 70%;
+    margin-left: 5rem;
+  }
+
+  .know-us {
+    margin: 9rem 0 0 9rem;
+  }
+
+  .find-sound {
+    margin: 8.5rem 0 0 5rem;
+  }
+
+  .paragraph {
+    margin: 11.5rem 0 0 9rem;
+    width: 65%;
   }
 
   .explanation {
-    margin-top: 2.5rem;
+    margin: 11rem 0 0 5rem;
+    width: 65%;
+  }
+
+  .music {
+    padding: 3rem 0;
+    margin-top: -4rem;
   }
 
   .music-paragraph {
-    width: 40%;
+    width: 50%;
   }
 
 }

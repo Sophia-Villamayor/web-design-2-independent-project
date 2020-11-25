@@ -63,6 +63,10 @@ a:hover {
   color: #f7d9c8
 }
 
+.current {
+  color: #f7d9c8;
+}
+
 .intro {
   background-color: #ccb6a9;
   margin: 0;
@@ -110,7 +114,7 @@ main {
   width: 100%;
 }
 
-h2,h3,h4 {
+h2, h3, h4 {
   margin: .5rem  0;
   color: #59656d;
 }
@@ -139,7 +143,7 @@ h2,h3,h4 {
 }
 
 .explanation {
-  margin: .5rem 0 0 ;
+  margin: .5rem 0 0;
   width: 95%;
 }
 
@@ -156,14 +160,43 @@ svg {
 }
 
 footer {
-  background-color: #000;
+  background-color: #fff;
 }
 
-@media only screen and (min-width: 25em) {
+/*instructors*/
+
+.audience,
+.learn-more {
+  text-align: center;
+}
+
+.card {
+  text-align: center;
+}
+
+.profile {
+  width: 90%;
+  margin-top: 3rem;
+}
+
+.name {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.instrument {
+  margin: 0;
+}
+
+@media only screen and (min-width: 38em) {
 
   .logo img {
-    width: 70%;
     margin: 0;
+    width: 80%;
+  }
+
+  .logo {
+    margin-right: 5rem;
   }
 
   header {
@@ -171,110 +204,95 @@ footer {
   }
 
   .nav {
-    display: inline-block;
     text-align: right;
-    width: 80%;
-    margin: 0;
+    display: inline-block;
   }
-
 
   li {
     display: inline-block;
-    padding: 1rem 0;
+  }
+
+  ul {
+    justify-content: flex-end;
+  }
+
+  .links a {
+    padding: 0 1rem;
+  }
+
+  .about, .sound {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+  }
+
+  .about {
+    margin-top: 5rem;
   }
 
   .description {
     width: 65%;
   }
 
-  .about {
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .drums {
-    grid-column: 1;
-    grid-row: 1;
-  }
-
-  .know-us {
+  .know-us, .sheet {
     grid-column: 2;
     grid-row: 1;
-    align-items: flex-end;
-    margin: 0;
-  }
-
-  .paragraph {
-    grid-column: 2;
-    grid-row: 1;
-    margin-top: 2.5rem;
+    margin-top: 0;
   }
 
   .sound {
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .find-sound {
-    grid-column: 2;
-    grid-row: 1;
-    margin: 0;
-  }
-
-  .explanation {
-    grid-column: 2;
-    grid-row: 1;
-    margin-top: 5rem;
-  }
-
-  .sheet {
-    grid-column: 1;
-    grid-row: 1;
-  }
-
-  h4,
-  .address {
-    text-align: center;
-  }
-
-}
-
-@media only screen and (min-width: 38em) {
-
-  .description {
-    width: 45%;
-  }
-
-  .drums,
-  .sheet {
-    width: 90%;
-    margin-left: 3rem;
+    margin: 6rem 0;
   }
 
   .paragraph {
     width: 90%;
+    margin-top: 2.5rem;
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .find-sound {
+    margin-top: 0;
+    grid-row: 1;
+    grid-column: 1;
   }
 
   .explanation {
-    margin-top: 2.5rem;
     width: 82%;
+    grid-row: 1;
+    grid-column: 1;
+    margin-top: 5rem;
   }
 
-  .problem,
-  .music-paragraph {
+  .music {
     text-align: center;
+    margin: 5rem 0;
   }
 
   .music-paragraph {
     width: 80%;
     margin: auto;
+    padding-bottom: 1rem;
+  }
+
+  h4 {
+    margin-left: 1rem;
+    text-align: center;
+  }
+
+  .address {
+    margin: 1rem 1.5rem;
+    text-align: center;
+    width: 80%;
   }
 
 }
 
 @media only screen and (min-width: 60em) {
+
+  .logo {
+    margin-right: 20rem;
+  }
 
   main {
     display: grid;
@@ -282,13 +300,62 @@ footer {
     grid-template-columns: 1fr 1fr;
   }
 
-  .drums,
-  .sheet {
-    margin-left: 1.4rem;
+  .about, .sound {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .drums, .sheet {
+    grid-row: 1 / span 2;
+    grid-column: 1 / span 2;
+  }
+
+  .drums {
+    margin-top: 1rem;
+  }
+
+  .know-us, .paragraph, .find-sound, .explanation {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .know-us {
+    margin-top: 5.5rem;
+  }
+
+  .find-sound {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span -2;
+    margin-top: 5.5rem;
+  }
+
+  .paragraph {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span -2;
+    margin-top: 8.3rem;
+    margin-bottom: 0;
   }
 
   .explanation {
-    margin-top: 5rem;
+    grid-column: 1 / span 2;
+    grid-row: 2 / span -2;
+    margin-top: 8.5rem;
+  }
+
+  .music {
+    margin-top: 2rem;
+  }
+
+  ul {
+    justify-content: flex-end;
+  }
+
+  .links a {
+    padding: 0 2rem;
+  }
+
+  .address {
+    width: 100%;
   }
 
 }
@@ -305,6 +372,10 @@ footer {
 
   .links a {
     padding: 0 3rem;
+  }
+
+  .drums, .sheet {
+    width: 80%;
   }
 
   .explanation {

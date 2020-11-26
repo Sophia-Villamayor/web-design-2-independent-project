@@ -102,6 +102,10 @@ h1 {
   color: #59656d;
 }
 
+.learn-more {
+  width: 90%;
+}
+
 .description {
   width: 98%;
 }
@@ -184,7 +188,7 @@ footer {
 }
 
 .profile {
-  width: 90%;
+  width: 80%;
   margin-top: 3rem;
 }
 
@@ -195,6 +199,28 @@ footer {
 
 .instrument {
   margin: 0;
+}
+
+.audience,
+.learn-more {
+  text-align: left;
+  margin-left: 1rem;
+}
+
+.audience {
+  margin-top: 2rem;
+}
+
+@media only screen and (min-width: 25em) {
+
+  h1 {
+    width: 90%;
+  }
+
+  .learn-more {
+    width: 80%;
+  }
+
 }
 
 @media only screen and (min-width: 38em) {
@@ -229,6 +255,10 @@ footer {
     padding: 0 1rem;
   }
 
+  h1 {
+    font-size: 2.441rem;
+  }
+
   .about, .sound {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -241,6 +271,7 @@ footer {
 
   .description {
     width: 65%;
+    margin-bottom: 2rem;
   }
 
   .know-us, .sheet {
@@ -295,6 +326,34 @@ footer {
     width: auto;
   }
 
+  .instructors {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .audience {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .learn-more {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+  }
+
+  .maggie {
+    width: 75%;
+  }
+
+  .isaac {
+    width: 74%;
+  }
+
+  .mel {
+    width: 76%;
+  }
+
 }
 
 @media only screen and (min-width: 60em) {
@@ -309,9 +368,12 @@ footer {
     grid-template-columns: 1fr 1fr;
   }
 
+  h1 {
+    font-size: 3.052rem;
+  }
+
   .about, .sound {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+    display: inline-block;
   }
 
   .drums, .sheet {
@@ -323,32 +385,22 @@ footer {
     margin-top: 1rem;
   }
 
-  .know-us, .paragraph, .find-sound, .explanation {
-    grid-column: 1;
-    grid-row: 2;
-  }
-
   .know-us {
-    margin-top: 5.5rem;
-  }
-
-  .find-sound {
-    grid-column: 1 / span 2;
-    grid-row: 2 / span -2;
-    margin-top: 5.5rem;
-  }
-
-  .paragraph {
-    grid-column: 1 / span 2;
-    grid-row: 2 / span -2;
-    margin-top: 8.3rem;
+    margin-top: 1rem;
     margin-bottom: 0;
   }
 
+  .find-sound {
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+
+  .paragraph {
+    margin-top: 1rem;
+  }
+
   .explanation {
-    grid-column: 1 / span 2;
-    grid-row: 2 / span -2;
-    margin-top: 8.5rem;
+    margin-top: 1rem;
   }
 
   .music {
@@ -367,6 +419,28 @@ footer {
     width: auto;
   }
 
+  .instructors {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .audience {
+    text-align: center;
+    margin: auto;
+    margin-top: 2rem;
+  }
+
+  .learn-more {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    margin-top: 1rem;
+  }
+
+  .erica {
+    width: 63%;
+  }
+
 }
 
 @media only screen and (min-width: 90em) {
@@ -375,53 +449,12 @@ footer {
     margin-right: 55rem;
   }
 
-  nav {
-    text-align: right;
-  }
-
-  ul {
-    justify-content: flex-end;
-  }
-
-  .links a {
-    padding: 0 3rem;
+  .logo img {
+    width: 130%;
   }
 
   .description {
-    width: 30%;
-  }
-
-  .drums {
-    width: 70%;
-    margin-left: 9rem;
-  }
-
-  .sheet {
-    width: 70%;
-    margin-left: 5rem;
-  }
-
-  .know-us {
-    margin: 9rem 0 0 9rem;
-  }
-
-  .find-sound {
-    margin: 8.5rem 0 0 5rem;
-  }
-
-  .paragraph {
-    margin: 11.5rem 0 0 9rem;
-    width: 65%;
-  }
-
-  .explanation {
-    margin: 11rem 0 0 5rem;
-    width: 65%;
-  }
-
-  .music {
-    padding: 3rem 0;
-    margin-top: -4rem;
+    width: 40%;
   }
 
   .music-paragraph {

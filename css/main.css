@@ -60,7 +60,7 @@ a {
 }
 
 a:hover {
-  color: #f7d9c8
+  color: #f7d9c8;
 }
 
 .current {
@@ -176,11 +176,10 @@ footer {
   background-color: #fff;
 }
 
-/*instructors*/
-
 .audience,
 .learn-more {
-  text-align: center;
+  text-align: left;
+  margin-left: 1rem;
 }
 
 .card {
@@ -199,12 +198,6 @@ footer {
 
 .instrument {
   margin: 0;
-}
-
-.audience,
-.learn-more {
-  text-align: left;
-  margin-left: 1rem;
 }
 
 .audience {

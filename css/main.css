@@ -56,19 +56,20 @@ li {
 
 a {
   text-decoration: none;
-  color: #ccb6a9;
+  font-weight: bold;
+  color: #fff;
 }
 
 a:hover {
-  color: #f7d9c8;
+  color: #df4a4d;
 }
 
 .current {
-  color: #f7d9c8;
+  color: #df4a4d;
 }
 
 .intro {
-  background-color: #ccb6a9;
+  background-color: rgba(255, 0, 0, 0.7);
   margin: 0;
 }
 
@@ -78,20 +79,16 @@ a:hover {
 }
 
 .button {
-  background-color: #ccb6a9;
-  border-color: #59656d;
   border: 3px solid;
-  border-radius: 4px;
-  color: #59656d;
+  color: #262859;
   padding: .5rem;
   font-weight: bold;
 }
 
 a.button:hover {
-  background-color: #59656d;
-  border: 3px solid #59656d;
+  background-color: #262859;
+  border: 3px solid #262859;
   color: #fff;
-  border-radius: 4px;
 }
 
 h1 {
@@ -99,7 +96,7 @@ h1 {
   padding-top: 1rem;
   margin-top: 0;
   margin-bottom: .5rem;
-  color: #59656d;
+  color: #262859;
 }
 
 .learn-more {
@@ -120,12 +117,12 @@ main {
 
 h2, h3 {
   margin: .5rem  0;
-  color: #59656d;
+  color: #df4a4d;
 }
 
 h4 {
   margin: .5rem 1rem;
-  color: #59656d;
+  color: #262859;
 }
 
 .sound, .about {
@@ -138,9 +135,13 @@ h4 {
 }
 
 .music {
-  background-color: #dedede;
+  background-color: #262859;
   padding: 1rem;
   margin-bottom: 3rem;
+}
+
+.music-paragraph {
+  color: #fff;
 }
 
 .problem {
@@ -156,19 +157,54 @@ h4 {
   width: 95%;
 }
 
+.day-one,
+.day-two {
+  margin: 1rem 2rem;
+  padding: 1rem 0 2rem;
+  background-color: #262859;
+  color: #fff;
+  text-align: center;
+  width: 80%;
+}
+
+.day-one {
+  margin-top: 3rem;
+}
+
+.day-two {
+  margin-bottom: 3rem;
+}
+
+.ticket-info {
+  margin: 1rem 0;
+}
+
+.money {
+  font-weight: bold;
+  color: #df4a4d;
+}
+
+.ticket-button {
+  color: #0098dc;
+  border: 3px solid #0098dc;
+  padding: .5rem;
+}
+
+a.ticket-button:hover {
+  color: #fff;
+  background-color: #0098dc;
+}
+
 .location {
   width: 100%;
 }
 
 .address {
   margin: 1rem;
+  color: #262859;
 }
 
-.icon,
 svg {
-  width: 20%;
-  display: flex;
-  margin: 0;
   color: #000;
 }
 
@@ -182,13 +218,22 @@ footer {
   margin-left: 1rem;
 }
 
+.learn-more {
+  margin-bottom: 4rem;
+}
+
 .card {
   text-align: center;
+  padding-bottom: 2rem;
 }
 
 .profile {
   width: 80%;
-  margin-top: 3rem;
+  margin-top: 2rem;
+}
+
+.instructors {
+  background-color: #262859;
 }
 
 .name {
@@ -198,6 +243,7 @@ footer {
 
 .instrument {
   margin: 0;
+  color: #fff;
 }
 
 .audience {
@@ -212,6 +258,10 @@ footer {
 
   .learn-more {
     width: 80%;
+  }
+
+  .ticket-price {
+    margin-bottom: 1.5rem;
   }
 
 }
@@ -306,6 +356,17 @@ footer {
     width: 80%;
     margin: auto;
     padding-bottom: 1rem;
+  }
+
+  .ticket-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+  }
+
+  .day-one {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
   }
 
   h4 {
@@ -408,6 +469,17 @@ footer {
     padding: 0 2rem;
   }
 
+  .day-one,
+  .day-two {
+    width: 60%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .day-one {
+    margin-left: 11.78rem;
+  }
+
   .address {
     width: auto;
   }
@@ -452,6 +524,15 @@ footer {
 
   .music-paragraph {
     width: 50%;
+  }
+
+  .day-one,
+  .day-two {
+    width: 35%;
+  }
+
+  .day-one {
+    margin-left: 29.2rem;
   }
 
 }

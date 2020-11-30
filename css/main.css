@@ -45,7 +45,7 @@ body {
   margin: 0;
 }
 
-header {
+.head {
   background-color: #000;
 }
 
@@ -390,7 +390,7 @@ footer {
     margin-right: 5rem;
   }
 
-  header {
+  .head {
     display: flex;
   }
 

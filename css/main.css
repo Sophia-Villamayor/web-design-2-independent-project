@@ -24,6 +24,15 @@ body {
   margin: 0;
 }
 
+.skip-links {
+  position: absolute;
+  top: -3em;
+}
+
+.skip-links a:focus {
+  top: 0;
+}
+
 .logo {
   margin: 0;
   padding: 1rem 1rem 0;
@@ -68,8 +77,13 @@ a:hover {
   color: #df4a4d;
 }
 
+.banner-image {
+  margin-left: 0;
+  display: none;
+}
+
 .intro {
-  background-color: rgba(255, 0, 0, 0.7);
+  background-color: rgba(255, 0, 0, .7);
   margin: 0;
 }
 
@@ -101,6 +115,7 @@ h1 {
 
 .learn-more {
   width: 90%;
+  margin-bottom: 4rem;
 }
 
 .description {
@@ -135,9 +150,15 @@ h4 {
 }
 
 .music {
-  background-color: #262859;
   padding: 1rem;
   margin-bottom: 3rem;
+  background-color: #fff;
+  border: 4px solid #262859;
+}
+
+.music-problem {
+  background-color: #262859;
+  padding: 1rem;
 }
 
 .music-paragraph {
@@ -205,7 +226,9 @@ a.ticket-button:hover {
 }
 
 .socials {
+  text-align: center;
   margin-left: 1rem;
+  padding-top: 1rem;
 }
 
 footer {
@@ -220,10 +243,6 @@ footer {
 .learn-more {
   text-align: left;
   margin-left: 1rem;
-}
-
-.learn-more {
-  margin-bottom: 4rem;
 }
 
 .card {
@@ -252,11 +271,6 @@ footer {
 
 .audience {
   margin-top: 2rem;
-}
-
-.music {
-  background-color: #fff;
-  border: 4px solid #262859;
 }
 
 .hover-box {
@@ -355,8 +369,27 @@ footer {
     padding: 0 1rem;
   }
 
+  .intro {
+    background: #fffa;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .banner-image {
+    display: block;
+    width: 100%;
+    position: relative;
+    opacity: 55%;
+  }
+
+  .intro-content {
+    position: absolute;
+    font-weight: bold;
+  }
+
   h1 {
     font-size: 2.441rem;
+    width: 100%;
   }
 
   .about, .sound {
@@ -370,8 +403,7 @@ footer {
   }
 
   .description {
-    width: 65%;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 
   .know-us, .sheet {
@@ -382,6 +414,12 @@ footer {
 
   .sound {
     margin: 6rem 0;
+  }
+
+  .music-problem {
+    background-color: #262859;
+    padding: 1rem;
+    text-align: center;
   }
 
   .paragraph {
@@ -406,7 +444,10 @@ footer {
 
   .music {
     text-align: center;
-    margin: 5rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    margin: 5rem 1rem 1rem;
   }
 
   .music-paragraph {
@@ -465,13 +506,6 @@ footer {
     width: 76%;
   }
 
-  .music {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1rem;
-    margin: 5rem 1rem 1rem;
-  }
-
   .saxophone {
     width: 30%;
   }
@@ -519,6 +553,20 @@ footer {
     font-size: 3.052rem;
   }
 
+  .intro-content {
+    margin-top: .5rem;
+  }
+
+  .description {
+    font-size: 1.563rem;
+    width: 65%;
+    margin-bottom: 2rem;
+  }
+
+  .button {
+    font-size: 1.25rem;
+  }
+
   .about, .sound {
     display: inline-block;
   }
@@ -552,6 +600,16 @@ footer {
 
   .music {
     margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+  }
+
+  .music-problem {
+    background-color: #262859;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
   }
 
   ul {
@@ -599,12 +657,6 @@ footer {
     width: 63%;
   }
 
-  .music {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 1rem;
-  }
-
   .tenor {
     margin-top: 1rem;
   }
@@ -622,11 +674,17 @@ footer {
   }
 
   .logo img {
-    width: 130%;
+    width: 80%;
+  }
+
+  .intro-content {
+    text-align: center;
+    margin-top: 8rem;
   }
 
   .description {
     width: 40%;
+    margin-left: 30rem;
   }
 
   .drums,

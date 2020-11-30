@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>Strings Attached Music Academy</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <ul class="skip-links">
+    <li><a href="#nav">skip to navigation</a></li>
+    <li><a href="#main">skip to main content</a></li>
+  </ul>
+
+  <header role="banner">
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/logo.svg" alt="logo of heart with strings connected">
+      </a>
+    </div>
+
+    <nav class="nav" role="navigation" id="nav">
+      <ul class="links">
+        <li><a href="instructors.html">Instructors</a></li>
+        <li><a href="instruments.html">Instruments</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="tickets.html">Tickets</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="purchase" role="main" id="main">
+    <section class="contact" role="complementary">
+      <div class="max-length">
+        <h1 class="ticket-header">Because making Music never felt Better</h1>
+        <h2 class="sub-head">Buy your Tickets Now!</h2>
+
+        <form method="POST" action="https://formspree.io/vill0347@algonquincollege.com">
+          <div class="form-content">
+            <label for="name">Full Name</label>
+            <input class="bar" id="name" name="name" required>
+          </div>
+          <div class="form-content">
+            <label for="email">Your Email</label>
+            <input class="bar" id="email" type="email" placeholder="youremail@here.com" aria-label="email" name="email" required>
+          </div>
+          <div class="form-content">
+            <label for="subscribe">Join Us</label>
+            <select class="drop-down" id="subscribe" name="subscribe">
+              <option>Select a day to jam on</option>
+              <option>Day 1</option>
+              <option>Day 2</option>
+            </select>
+          </div>
+          <div class="form-content">
+            <label for="payment">Payment</label>
+            <select class="mop" id="payment" name="payment">
+              <option>Method of Payment</option>
+              <option>Debit Card</option>
+              <option>Credit Card</option>
+            </select>
+          </div>
+          <div>
+            <button class="btn button" type="submit">Let's Go!</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </body>
+  </html>

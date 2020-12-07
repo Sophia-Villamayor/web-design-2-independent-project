@@ -335,6 +335,19 @@ footer {
   padding: 0 .5rem;
 }
 
+.pay {
+  color: #000;
+  background-color: #fff;
+  border: 3px solid #262859;
+  padding: .5rem;
+  }
+
+a.pay:hover {
+  color: #fff;
+  background-color: #262859;
+  border: 3px solid #262859;
+}
+
 @media only screen and (min-width: 25em) {
 
   h1 {
